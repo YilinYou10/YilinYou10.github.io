@@ -17,6 +17,17 @@
       --muted: #6b7280;
       --border: #e5e7eb;
       --light-blue: #eaf3ff;
+      .research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 780px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
     }
 
     * {
@@ -355,7 +366,7 @@
 
         <p>
           I am a PhD candidate at the School of Architecture and Civil Engineering,
-          Xiamen University. My research focuses on thermotropic and thermochromic
+          Xiamen University, now I am a visiting student in NUS. My research focuses on thermotropic and thermochromic
           smart windows, building energy simulation, daylighting performance,
           climate-adaptive façade systems, and urban building energy modelling
           under future climate scenarios.
@@ -401,7 +412,7 @@
     <section class="section" id="research">
       <h2>Research Interests</h2>
 
-      <div class="grid">
+      <div class="research-grid">
         <div class="card">
           <h3>Smart Windows</h3>
           <p>
@@ -414,7 +425,8 @@
           <h3>Building Energy Simulation</h3>
           <p>
             EnergyPlus modelling, envelope performance evaluation, heating and
-            cooling energy analysis, and parametric simulation workflows.
+            cooling energy analysis, and parametric simulation workflow<div class="card">
+      <h3>Smart Windows</h3>s.
           </p>
         </div>
 
